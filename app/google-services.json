@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "328486990922",
+    "firebase_url": "https://medication-reminder-18.firebaseio.com",
+    "project_id": "medication-reminder-18",
+    "storage_bucket": "medication-reminder-18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328486990922:android:2efdbefe602f6894",
+        "android_client_info": {
+          "package_name": "com.project.mednudge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328486990922-1tv3tb9dn7tj0kl88vnd4m2eg0t46flr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKpJF0VnYgt8xEPEdWa00WC9TjvAM0gsA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
