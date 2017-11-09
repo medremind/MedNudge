@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.mednudge.History"
+    android:background="@drawable/gradient"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"> ></RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textSize="15sp"
+        android:background="@color/colorbutton"
+        android:textColor="@color/white"
+        android:id="@+id/today"
+        android:layout_alignTop="@+id/weekly"
+        android:layout_alignLeft="@+id/monthly"
+        android:layout_alignStart="@+id/monthly" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weekly"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@color/colorbutton"
+        android:id="@+id/weekly"
+        android:layout_marginBottom="76dp"
+        android:layout_above="@+id/monthly"
+        android:layout_alignLeft="@+id/yearly"
+        android:layout_alignStart="@+id/yearly" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly"
+        android:textSize="15sp"
+        android:background="@color/colorbutton"
+        android:id="@+id/monthly"
+        android:textColor="@color/white"
+        android:layout_alignBaseline="@+id/yearly"
+        android:layout_alignBottom="@+id/yearly"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yearly"
+        android:textSize="15sp"
+        android:background="@color/colorbutton"
+        android:id="@+id/yearly"
+        android:layout_below="@+id/toolbar"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginTop="216dp" />
+
+
+</RelativeLayout>

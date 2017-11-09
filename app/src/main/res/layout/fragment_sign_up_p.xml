@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.mednudge.SignUpP"
+    android:background="@drawable/gradient"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="12dp"
+        android:id="@+id/view2"
+        app:cardCornerRadius="50dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_gravity="center_horizontal"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="63dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/camera"></ImageView>
+    </android.support.v7.widget.CardView>
+    <EditText
+        android:id="@+id/edit_first_name"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/view2"
+        android:ems="10"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Name"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/edit_user_name"
+        android:textColor="@color/black"
+        android:layout_below="@+id/edit_first_name"
+        android:layout_width="match_parent"
+        android:hint="User Name"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/edit_age"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/edit_user_name"
+        android:hint="Age"/>
+    <!--<TextView
+        android:id="@+id/genderp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="Gender"/>
+    <Spinner
+        android:id="@+id/select_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/gender"></Spinner>-->
+    <EditText
+        android:id="@+id/edit_gender"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edit_age"
+        android:hint="Gender"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edit_gender"
+        android:hint="E-mail"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/edit_telephone"
+        android:textColor="@color/black"
+        android:layout_below="@+id/edit_email"
+        android:hint="Contact Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/edit_password"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_telephone"
+        android:hint="Password"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/edit_confirm_password"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_password"
+        android:hint="Confirm Password"
+        android:textSize="15sp"
+        />
+    <Button
+        android:id="@+id/button"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+
+        android:textSize="10sp"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:background="@color/colorbutton"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.project.mednudge.AddEditMedicine"
+    android:orientation="vertical"
+   android:background="@drawable/gradient"
+   >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:elevation="12dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="63dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/camera"></ImageView>
+        </android.support.v7.widget.CardView>
+
+        <EditText
+            android:id="@+id/medicine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_view"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Mediciene Name"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/prescribed_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/medicine_name"
+            android:hint="Prescribed By"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/prescribed_by"
+            android:layout_marginTop="13dp"
+            android:text="Dose"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_dose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dose"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@+id/card_view"
+            android:layout_toStartOf="@+id/card_view"
+            android:ems="5"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/select_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_dose"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/edit_dose"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:entries="@array/select_unit"></Spinner>
+
+        <RadioGroup
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_dose"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/before_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before food"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/after_food"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp"
+                android:layout_marginRight="0dp"
+                android:text="After food"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:hint="Others,specify"
+            android:textSize="15sp"
+            android:layout_above="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawableTop="@drawable/add_alarm"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorbutton"
+            android:fontFamily="sans-serif"
+            android:text="Set Alarm"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</LinearLayout>
