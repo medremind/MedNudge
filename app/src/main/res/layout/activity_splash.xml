@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.project.mednudge.SplashActivity"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.39"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.DeviceDefault.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="159dp"
+        android:elevation="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/splash"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="80px"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:singleLine="false" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@android:style/Widget.DeviceDefault.TextView"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/splash1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="276dp"
+        tools:singleLine="false"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

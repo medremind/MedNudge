@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "328486990922-t2dca6dvad2c5qvpe1gs0al5vf0c4v2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.mednudge",
+            "certificate_hash": "58a44255f8cc044214986cf440aba7f48b41a9bc"
+          }
+        },
+        {
           "client_id": "328486990922-1tv3tb9dn7tj0kl88vnd4m2eg0t46flr.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,57 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328486990922-1tv3tb9dn7tj0kl88vnd4m2eg0t46flr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328486990922:android:e1eb9b6c38ae8a91",
+        "android_client_info": {
+          "package_name": "mednudge.splashscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328486990922-2n130kviksers2jmna1ujunug2ppslfo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mednudge.splashscreen",
+            "certificate_hash": "a36beb14efbc477c1aaa3e710ffde7113a91cea4"
+          }
+        },
+        {
+          "client_id": "328486990922-1tv3tb9dn7tj0kl88vnd4m2eg0t46flr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKpJF0VnYgt8xEPEdWa00WC9TjvAM0gsA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328486990922-1tv3tb9dn7tj0kl88vnd4m2eg0t46flr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

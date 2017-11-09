@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/view_prescription"
+            android:title="View Prescription"
+            android:icon="@drawable/view_prescription" />
+        <item android:id="@+id/add_medicine"
+            android:title="Add Medicine"
+            android:icon="@drawable/ic_add_circle_black_24dp" />
+        <item android:id="@+id/history"
+            android:title="History"
+            android:icon="@drawable/ic_history_black_24dp" />
+
+
+
+</menu>
