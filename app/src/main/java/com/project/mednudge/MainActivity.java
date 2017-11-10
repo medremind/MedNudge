@@ -21,7 +21,14 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed()
 
     {
-        super.onBackPressed();
+        int count=getFragmentManager().getBackStackEntryCount();
+        if (count==0) {
+            super.onBackPressed();
+        }
+        else
+        {
+            getFragmentManager().popBackStack();
+        }
     }
 }
 

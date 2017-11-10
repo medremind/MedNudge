@@ -61,6 +61,7 @@ View view;
                 fragmentTransaction = getFragmentManager().beginTransaction();
                 fragment = new History();//the fragment you want to show
                 fragmentTransaction.replace(R.id.content_frame, fragment);//R.id.content_frame is the layout you want to replace
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
 
                 break;
@@ -69,6 +70,7 @@ View view;
                 fragmentTransaction = getFragmentManager().beginTransaction();
                 fragment = new AddEditMedicine();//the fragment you want to show
                 fragmentTransaction.replace(R.id.content_frame, fragment);//R.id.content_frame is the layout you want to replace
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
             case R.id.fab3:
@@ -76,6 +78,7 @@ View view;
                 fragmentTransaction = getFragmentManager().beginTransaction();
                 fragment = new Prescription();//the fragment you want to show
                 fragmentTransaction.replace(R.id.content_frame, fragment);//R.id.content_frame is the layout you want to replace
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
         }

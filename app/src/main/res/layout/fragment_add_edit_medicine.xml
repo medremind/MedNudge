@@ -51,7 +51,7 @@
             android:layout_below="@+id/card_view"
             android:layout_marginTop="40dp"
             android:ems="10"
-            android:hint="Mediciene Name"
+            android:hint="Medicine Name"
             android:textColor="@color/black"
             android:textSize="15sp" />
 
