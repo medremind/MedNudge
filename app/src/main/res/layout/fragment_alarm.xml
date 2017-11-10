@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.mednudge.Alarm"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_select_date"
+            android:layout_alignEnd="@+id/edit_dose"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/edit_dose"
+
+            android:gravity="center_vertical"
+            android:text="Select Date"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_select_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            android:clickable="true"
+            android:ems="10"
+            android:hint="dd/mm/yyyy"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/select_date"
+            android:layout_marginTop="13dp"
+            android:text="Duration"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/duration"
+            android:textSize="20sp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:ems="5" />
+
+        <Spinner
+            android:id="@+id/select_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_duration"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/edit_duration"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:entries="@array/unit"></Spinner>
+
+        <TextView
+            android:id="@+id/frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_duration"
+            android:layout_marginTop="20dp"
+            android:text="Frequency"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_select_date"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/edit_select_date"
+            android:layout_alignTop="@+id/frequency"
+            android:entries="@array/frequency"></Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/frequency"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:text="Timer 1" />
+
+            <EditText
+                android:id="@+id/time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:text="Timer 2" />
+
+            <EditText
+                android:id="@+id/time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:text="Timer 3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Repeat"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="69dp"
+            android:orientation="horizontal"
+            android:layout_above="@+id/save"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ToggleButton
+                android:id="@+id/monday"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="4dp"
+
+                android:background="@drawable/style_toggle_button"
+                android:textOff="M"
+                android:textOn="M" />
+
+            <ToggleButton
+                android:id="@+id/tuesday"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+
+
+                android:background="@drawable/style_toggle_button"
+                android:textOff="T"
+                android:textOn="T" />
+
+            <ToggleButton
+                android:id="@+id/wednesday"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/style_toggle_button"
+                android:textOff="W"
+                android:textOn="W" />
+
+            <ToggleButton
+                android:id="@+id/thursday"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/style_toggle_button"
+                android:textOff="T"
+                android:textOn="T" />
+
+            <ToggleButton
+                android:id="@+id/friday"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/style_toggle_button"
+                android:textOff="F"
+                android:textOn="F" />
+
+            <ToggleButton
+                android:id="@+id/saturday"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/style_toggle_button"
+                android:textOff="S"
+                android:textOn="S" />
+
+            <ToggleButton
+                android:id="@+id/sunday"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="4dp"
+
+                android:background="@drawable/style_toggle_button"
+                android:textOff="S"
+                android:textOn="S" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/save"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="200dp"
+
+
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorbutton"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MedNudge.iml" filepath="$PROJECT_DIR$/MedNudge.iml" />
+      <module fileurl="file://H:\MedNudge\MedNudge.iml" filepath="H:\MedNudge\MedNudge.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://H:\MedNudge\app\app.iml" filepath="H:\MedNudge\app\app.iml" />
     </modules>
   </component>
 </project>
