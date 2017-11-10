@@ -30,6 +30,7 @@ public class Login extends Fragment implements View.OnClickListener {
                 fragmentTransaction = getFragmentManager().beginTransaction();
                 fragment = new DoctorPatientSignup();//the fragment you want to show
                 fragmentTransaction.replace(R.id.content_frame, fragment);//R.id.content_frame is the layout you want to replace
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
@@ -46,11 +47,13 @@ public class Login extends Fragment implements View.OnClickListener {
             case R.id.button2:  fragmentTransaction = getFragmentManager().beginTransaction();
                 fragment = new DoctorProfile();//the fragment you want to show
                 fragmentTransaction.replace(R.id.content_frame, fragment);//R.id.content_frame is the layout you want to replace
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
             case R.id.button3:  fragmentTransaction = getFragmentManager().beginTransaction();
                 fragment = new PatientProfile();//the fragment you want to show
                 fragmentTransaction.replace(R.id.content_frame, fragment);//R.id.content_frame is the layout you want to replace
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
                 break;
         }
